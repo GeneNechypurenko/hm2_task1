@@ -40,7 +40,7 @@ namespace hm2_task1
 
         private decimal CalculateFinalAmount(decimal depositEntry, decimal interestRate, decimal depositTerm)
         {
-            return depositEntry * (1 + (interestRate / 100)) * depositTerm;
+            return (depositEntry * (interestRate / 100) * depositTerm) + depositEntry;
         }
     }
 }
